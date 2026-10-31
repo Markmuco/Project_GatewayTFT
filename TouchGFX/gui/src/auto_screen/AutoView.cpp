@@ -1,0 +1,30 @@
+#include <gui/auto_screen/AutoView.hpp>
+#include <gui/common/BitmapCache.hpp>
+#include <images/BitmapDatabase.hpp>
+
+AutoView::AutoView()
+{
+
+}
+
+void AutoView::setupScreen()
+{
+    AutoViewBase::setupScreen();
+
+    // compressed images to RAM (bitmap cache)
+    static const touchgfx::BitmapId ids[] = {
+        BITMAP_HEADER_BG_ID,
+        BITMAP_ICONS8_OK_40_ID,
+        BITMAP_ICONS8_DOUBLE_LEFT_48_ID,
+        BITMAP_ICONS8_DOUBLE_RIGHT_48_ID,
+        BITMAP_ICONS8_NOCAR_100_ID,
+        BITMAP_ICONS8_CAR_100_ID
+    };
+    decompressBitmaps(ids);
+}
+
+void AutoView::tearDownScreen()
+{
+    AutoViewBase::tearDownScreen();
+    touchgfx::Bitmap::clearCache();
+}

@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextDatabase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="texts.xsd" Version="4.26.1">
+  <Languages>
+    <Language Id="GB" />
+  </Languages>
+  <Texts>
+    <TextGroup Id="Group1" />
+    <TextGroup Id="Unsorted">
+      <Text Id="__SingleUse_C723" Alignment="Left" TypographyId="Typography1">
+        <Translation Language="GB">3:30</Translation>
+      </Text>
+      <Text Id="__SingleUse_CHU6" Alignment="Left" TypographyId="Typography1">
+        <Translation Language="GB">6500</Translation>
+      </Text>
+      <Text Id="__SingleUse_494P" Alignment="Left" TypographyId="Typography1">
+        <Translation Language="GB">16</Translation>
+      </Text>
+      <Text Id="__SingleUse_PUEU" Alignment="Left" TypographyId="Typography1">
+        <Translation Language="GB">Set&#10;&lt;value&gt;A</Translation>
+      </Text>
+      <Text Id="__SingleUse_RKZD" Alignment="Left" TypographyId="Typography1">
+        <Translation Language="GB">8.0</Translation>
+      </Text>
+      <Text Id="__SingleUse_OX1C" Alignment="Center" TypographyId="Typography1">
+        <Translation Language="GB">Session &lt;value&gt; kWh&#10; Total &lt;value&gt;kWh</Translation>
+      </Text>
+      <Text Id="__SingleUse_YO5W" Alignment="Left" TypographyId="Typography1">
+        <Translation Language="GB">Solar</Translation>
+      </Text>
+      <Text Id="__SingleUse_51VY" Alignment="Left" TypographyId="Typography1">
+        <Translation Language="GB">Free</Translation>
+      </Text>
+      <Text Id="__SingleUse_OV62" Alignment="Left" TypographyId="Typography1">
+        <Translation Language="GB">EV no car</Translation>
+      </Text>
+      <Text Id="__SingleUse_8FA1" Alignment="Left" TypographyId="Typography1">
+        <Translation Language="GB">Timed &lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_OMDQ" Alignment="Left" TypographyId="Typography1">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_X7VP" Alignment="Center" TypographyId="Large">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_Q1LL" Alignment="Center" TypographyId="Large">
+        <Translation Language="GB">Elektrische auto</Translation>
+      </Text>
+      <Text Id="__SingleUse_8VLY" Alignment="Left" TypographyId="Typography1">
+        <Translation Language="GB">Elektra&#10;&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="val_eq" Alignment="Left" TypographyId="Typography1">
+        <Translation Language="GB">abc</Translation>
+      </Text>
+      <Text Id="__SingleUse_ET6D" Alignment="Center" TypographyId="Large">
+        <Translation Language="GB">DSM</Translation>
+      </Text>
+      <Text Id="__SingleUse_RK1U" Alignment="Center" TypographyId="Large">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="water_now" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">12</Translation>
+      </Text>
+      <Text Id="__SingleUse_SY5X" Alignment="Left" TypographyId="Large">
+        <Translation Language="GB">&lt;value&gt;Liter</Translation>
+      </Text>
+      <Text Id="car_now" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">8.0kW</Translation>
+      </Text>
+      <Text Id="solor_now" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">1200W</Translation>
+      </Text>
+      <Text Id="elektra_now" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">386W</Translation>
+      </Text>
+      <Text Id="__SingleUse_8YMK" Alignment="Left" TypographyId="Large">
+        <Translation Language="GB">&lt;value&gt;kWh</Translation>
+      </Text>
+      <Text Id="__SingleUse_ZP21" Alignment="Left" TypographyId="Large">
+        <Translation Language="GB">&lt;value&gt;kWh</Translation>
+      </Text>
+      <Text Id="el_kwh" Alignment="Left" TypographyId="Typography1">
+        <Translation Language="GB">4.2</Translation>
+      </Text>
+      <Text Id="__SingleUse_Q8P7" Alignment="Left" TypographyId="Large">
+        <Translation Language="GB">&lt;value&gt;kWh</Translation>
+      </Text>
+      <Text Id="__SingleUse_ZWBX" Alignment="Center" TypographyId="Large">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_SKGS" Alignment="Center" TypographyId="Large">
+        <Translation Language="GB">&lt;value&gt;ºC &lt;value&gt;km/h</Translation>
+      </Text>
+      <Text Id="__SingleUse_193F" Alignment="Center" TypographyId="Large">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="wind" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">10.0</Translation>
+      </Text>
+      <Text Id="toptime" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">19:15</Translation>
+      </Text>
+      <Text Id="realtime" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">00:20</Translation>
+      </Text>
+      <Text Id="min" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">02</Translation>
+      </Text>
+      <Text Id="hour2" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">00</Translation>
+      </Text>
+      <Text Id="minute" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">00</Translation>
+      </Text>
+      <Text Id="hour" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB"></Translation>
+      </Text>
+      <Text Id="Time" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_43HX" Alignment="Center" TypographyId="Large">
+        <Translation Language="GB">&lt;value&gt;ºC &lt;value&gt;km/h</Translation>
+      </Text>
+      <Text Id="lbl_hint" Alignment="Center" TypographyId="Typography1">
+        <Translation Language="GB">Tik om te starten</Translation>
+      </Text>
+      <Text Id="lbl_energy" Alignment="Center" TypographyId="Typography1">
+        <Translation Language="GB">Energie</Translation>
+      </Text>
+      <Text Id="lbl_alarm" Alignment="Center" TypographyId="Typography1">
+        <Translation Language="GB">Alarm</Translation>
+      </Text>
+      <Text Id="lbl_lights" Alignment="Center" TypographyId="Typography1">
+        <Translation Language="GB">Huis</Translation>
+      </Text>
+      <Text Id="lbl_env" Alignment="Center" TypographyId="Typography1">
+        <Translation Language="GB">Omgeving</Translation>
+      </Text>
+      <Text Id="lbl_car" Alignment="Center" TypographyId="Typography1">
+        <Translation Language="GB">Auto</Translation>
+      </Text>
+      <Text Id="lbl_heater" Alignment="Center" TypographyId="Typography1">
+        <Translation Language="GB">Verwarming</Translation>
+      </Text>
+      <Text Id="lbl_info" Alignment="Center" TypographyId="Typography1">
+        <Translation Language="GB">Info</Translation>
+      </Text>
+      <Text Id="lbl_system" Alignment="Center" TypographyId="Typography1">
+        <Translation Language="GB">Systeem</Translation>
+      </Text>
+      <Text Id="lbl_equ" Alignment="Left" TypographyId="Typography1">
+        <Translation Language="GB">Elektra&#10;&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="lbl_solar" Alignment="Left" TypographyId="Typography1">
+        <Translation Language="GB">Zonnepanelen&#10;&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="lbl_fuel" Alignment="Left" TypographyId="Typography1">
+        <Translation Language="GB">Auto&#10;&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="lbl_gas" Alignment="Left" TypographyId="Typography1">
+        <Translation Language="GB">water&#10;&lt;value&gt;L/u</Translation>
+      </Text>
+      <Text Id="lbl_dsm_equipment" Alignment="Left" TypographyId="Typography1">
+        <Translation Language="GB">Equipment_identifier</Translation>
+      </Text>
+      <Text Id="dsm_t_equipment" Alignment="Left" TypographyId="Typography1">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="lbl_dsm_version" Alignment="Left" TypographyId="Typography1">
+        <Translation Language="GB">Version</Translation>
+      </Text>
+      <Text Id="dsm_t_version" Alignment="Left" TypographyId="Typography1">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="val_version" Alignment="Left" TypographyId="Typography1">
+        <Translation Language="GB">-</Translation>
+      </Text>
+      <Text Id="lbl_dsm_p1msg" Alignment="Left" TypographyId="Typography1">
+        <Translation Language="GB">P1 Message</Translation>
+      </Text>
+      <Text Id="dsm_t_p1msg" Alignment="Left" TypographyId="Typography1">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="val_p1msg" Alignment="Left" TypographyId="Typography1">
+        <Translation Language="GB">-</Translation>
+      </Text>
+      <Text Id="lbl_dsm_consumed" Alignment="Left" TypographyId="Typography1">
+        <Translation Language="GB">Consumed tariff_1+2</Translation>
+      </Text>
+      <Text Id="dsm_t_consumed" Alignment="Left" TypographyId="Typography1">
+        <Translation Language="GB">&lt;value&gt; kWh</Translation>
+      </Text>
+      <Text Id="val_consumed" Alignment="Left" TypographyId="Typography1">
+        <Translation Language="GB">-</Translation>
+      </Text>
+      <Text Id="lbl_dsm_produce" Alignment="Left" TypographyId="Typography1">
+        <Translation Language="GB">produce_tariff_1+2</Translation>
+      </Text>
+      <Text Id="dsm_t_produce" Alignment="Left" TypographyId="Typography1">
+        <Translation Language="GB">&lt;value&gt; kWh</Translation>
+      </Text>
+      <Text Id="val_produced" Alignment="Left" TypographyId="Typography1">
+        <Translation Language="GB">-</Translation>
+      </Text>
+      <Text Id="lbl_dsm_tariff" Alignment="Left" TypographyId="Typography1">
+        <Translation Language="GB">tariff_indicator</Translation>
+      </Text>
+      <Text Id="dsm_t_tariff" Alignment="Left" TypographyId="Typography1">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="val_tariff" Alignment="Left" TypographyId="Typography1">
+        <Translation Language="GB">-</Translation>
+      </Text>
+      <Text Id="lbl_dsm_actcons" Alignment="Left" TypographyId="Typography1">
+        <Translation Language="GB">actual_electricity_consume</Translation>
+      </Text>
+      <Text Id="dsm_t_actcons" Alignment="Left" TypographyId="Typography1">
+        <Translation Language="GB">&lt;value&gt; kW</Translation>
+      </Text>
+      <Text Id="val_act_cons" Alignment="Left" TypographyId="Typography1">
+        <Translation Language="GB">-</Translation>
+      </Text>
+      <Text Id="lbl_dsm_actprod" Alignment="Left" TypographyId="Typography1">
+        <Translation Language="GB">actual_electricity_produce</Translation>
+      </Text>
+      <Text Id="dsm_t_actprod" Alignment="Left" TypographyId="Typography1">
+        <Translation Language="GB">&lt;value&gt; kW</Translation>
+      </Text>
+      <Text Id="val_act_prod" Alignment="Left" TypographyId="Typography1">
+        <Translation Language="GB">-</Translation>
+      </Text>
+      <Text Id="lbl_dsm_sags" Alignment="Left" TypographyId="Typography1">
+        <Translation Language="GB">voltage_sags_L1,2,3</Translation>
+      </Text>
+      <Text Id="dsm_t_sags" Alignment="Left" TypographyId="Typography1">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="val_sags" Alignment="Left" TypographyId="Typography1">
+        <Translation Language="GB">-</Translation>
+      </Text>
+      <Text Id="lbl_dsm_swell" Alignment="Left" TypographyId="Typography1">
+        <Translation Language="GB">voltage_swell_L1,2,3</Translation>
+      </Text>
+      <Text Id="dsm_t_swell" Alignment="Left" TypographyId="Typography1">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="val_swell" Alignment="Left" TypographyId="Typography1">
+        <Translation Language="GB">-</Translation>
+      </Text>
+      <Text Id="lbl_dsm_gas" Alignment="Left" TypographyId="Typography1">
+        <Translation Language="GB">gas_consumed</Translation>
+      </Text>
+      <Text Id="dsm_t_gas" Alignment="Left" TypographyId="Typography1">
+        <Translation Language="GB">&lt;value&gt; m3</Translation>
+      </Text>
+      <Text Id="val_gas" Alignment="Left" TypographyId="Typography1">
+        <Translation Language="GB">-</Translation>
+      </Text>
+    </TextGroup>
+  </Texts>
+  <Typographies>
+    <Typography Id="Default" Font="verdana.ttf" Size="120" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
+    <Typography Id="Large" Font="verdana.ttf" Size="35" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
+    <Typography Id="Small" Font="verdana.ttf" Size="10" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
+    <Typography Id="Typography1" Font="verdana.ttf" Size="20" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
+  </Typographies>
+</TextDatabase>

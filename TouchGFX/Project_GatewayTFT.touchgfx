@@ -1,0 +1,1686 @@
+{
+  "Application": {
+    "Screens": [
+      {
+        "Name": "Sleep",
+        "Components": [
+          {
+            "Type": "FlexButton",
+            "Name": "flexButton1",
+            "Width": 800,
+            "Height": 480,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 800,
+                "Height": 480,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 5
+              }
+            ]
+          },
+          {
+            "Type": "Box",
+            "Name": "box1",
+            "Width": 800,
+            "Height": 480,
+            "Color": {
+              "Red": 8,
+              "Green": 10,
+              "Blue": 11
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textTime",
+            "X": 221,
+            "Y": 146,
+            "Width": 359,
+            "Height": 122,
+            "TextId": "Time",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 207,
+              "Green": 247,
+              "Blue": 220
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "realtime",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "Box",
+            "Name": "accentLine",
+            "X": 340,
+            "Y": 292,
+            "Width": 120,
+            "Height": 3,
+            "Color": {
+              "Red": 46,
+              "Green": 204,
+              "Blue": 113
+            }
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "flexButton1"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "Main"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "Main",
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "box1",
+            "Width": 800,
+            "Height": 480,
+            "Color": {
+              "Red": 18,
+              "Green": 22,
+              "Blue": 24
+            }
+          },
+          {
+            "Type": "Image",
+            "Name": "header",
+            "Width": 800,
+            "Height": 68,
+            "RelativeFilename": "header_bg.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "buttonOk",
+            "X": 20,
+            "Y": 14,
+            "Width": 40,
+            "Height": 40,
+            "Pressed": "icons8-Ok-40.png",
+            "Released": "icons8-Ok-40.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textTempWind",
+            "X": 235,
+            "Y": 14,
+            "Width": 331,
+            "Height": 41,
+            "TextId": "__SingleUse_43HX",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 214,
+              "Green": 228,
+              "Blue": 219
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "toptime"
+            },
+            "Wildcard2": {
+              "TextId": "wind"
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "texttime",
+            "X": 673,
+            "Y": 14,
+            "Width": 104,
+            "Height": 41,
+            "TextId": "__SingleUse_193F",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "toptime"
+            }
+          },
+          {
+            "Type": "Image",
+            "Name": "cardEnergy",
+            "X": 24,
+            "Y": 88,
+            "Width": 170,
+            "Height": 170,
+            "RelativeFilename": "card_square.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "buttonEnergy",
+            "X": 59,
+            "Y": 104,
+            "Width": 100,
+            "Height": 100,
+            "Pressed": "icons8-Energy-100.png",
+            "Released": "icons8-Energy-100.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "labelEnergy",
+            "X": 24,
+            "Y": 214,
+            "Width": 170,
+            "Height": 28,
+            "TextId": "lbl_energy",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 214,
+              "Green": 228,
+              "Blue": 219
+            }
+          },
+          {
+            "Type": "Image",
+            "Name": "cardAlarm",
+            "X": 218,
+            "Y": 88,
+            "Width": 170,
+            "Height": 170,
+            "RelativeFilename": "card_square.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "buttonAlarm",
+            "X": 253,
+            "Y": 104,
+            "Width": 100,
+            "Height": 100,
+            "Pressed": "icons8-Home Alarm-100.png",
+            "Released": "icons8-Home Alarm-100.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "labelAlarm",
+            "X": 218,
+            "Y": 214,
+            "Width": 170,
+            "Height": 28,
+            "TextId": "lbl_alarm",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 214,
+              "Green": 228,
+              "Blue": 219
+            }
+          },
+          {
+            "Type": "Image",
+            "Name": "cardLights",
+            "X": 412,
+            "Y": 88,
+            "Width": 170,
+            "Height": 170,
+            "RelativeFilename": "card_square.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "buttonLights",
+            "X": 447,
+            "Y": 104,
+            "Width": 100,
+            "Height": 100,
+            "Pressed": "icons8-Idea-100.png",
+            "Released": "icons8-Idea-100.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "labelLights",
+            "X": 412,
+            "Y": 214,
+            "Width": 170,
+            "Height": 28,
+            "TextId": "lbl_lights",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 214,
+              "Green": 228,
+              "Blue": 219
+            }
+          },
+          {
+            "Type": "Image",
+            "Name": "cardEnv",
+            "X": 606,
+            "Y": 88,
+            "Width": 170,
+            "Height": 170,
+            "RelativeFilename": "card_square.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "buttonEnviorment",
+            "X": 641,
+            "Y": 104,
+            "Width": 100,
+            "Height": 100,
+            "Pressed": "icons8-Nature-100.png",
+            "Released": "icons8-Nature-100.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "labelEnv",
+            "X": 606,
+            "Y": 214,
+            "Width": 170,
+            "Height": 28,
+            "TextId": "lbl_env",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 214,
+              "Green": 228,
+              "Blue": 219
+            }
+          },
+          {
+            "Type": "Image",
+            "Name": "cardCar",
+            "X": 24,
+            "Y": 288,
+            "Width": 170,
+            "Height": 170,
+            "RelativeFilename": "card_square.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "buttonCar",
+            "X": 59,
+            "Y": 304,
+            "Width": 100,
+            "Height": 100,
+            "Pressed": "icons8-car-100.png",
+            "Released": "icons8-car-100.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "labelCar",
+            "X": 24,
+            "Y": 414,
+            "Width": 170,
+            "Height": 28,
+            "TextId": "lbl_car",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 214,
+              "Green": 228,
+              "Blue": 219
+            }
+          },
+          {
+            "Type": "Image",
+            "Name": "cardHeater",
+            "X": 218,
+            "Y": 288,
+            "Width": 170,
+            "Height": 170,
+            "RelativeFilename": "card_square.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "buttonHeater",
+            "X": 253,
+            "Y": 304,
+            "Width": 100,
+            "Height": 100,
+            "Pressed": "icons8-Heating-100.png",
+            "Released": "icons8-Heating-100.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "labelHeater",
+            "X": 218,
+            "Y": 414,
+            "Width": 170,
+            "Height": 28,
+            "TextId": "lbl_heater",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 214,
+              "Green": 228,
+              "Blue": 219
+            }
+          },
+          {
+            "Type": "Image",
+            "Name": "cardInfo",
+            "X": 412,
+            "Y": 288,
+            "Width": 170,
+            "Height": 170,
+            "RelativeFilename": "card_square.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "buttonInfo",
+            "X": 447,
+            "Y": 304,
+            "Width": 100,
+            "Height": 100,
+            "Pressed": "icons8-info-popup-100.png",
+            "Released": "icons8-info-popup-100.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "labelInfo",
+            "X": 412,
+            "Y": 414,
+            "Width": 170,
+            "Height": 28,
+            "TextId": "lbl_info",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 214,
+              "Green": 228,
+              "Blue": 219
+            }
+          },
+          {
+            "Type": "Image",
+            "Name": "cardSystem",
+            "X": 606,
+            "Y": 288,
+            "Width": 170,
+            "Height": 170,
+            "RelativeFilename": "card_square.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "buttonSystem",
+            "X": 641,
+            "Y": 304,
+            "Width": 100,
+            "Height": 100,
+            "Pressed": "icons8-Settings-100.png",
+            "Released": "icons8-Settings-100.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "labelSystem",
+            "X": 606,
+            "Y": 414,
+            "Width": 170,
+            "Height": 28,
+            "TextId": "lbl_system",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 214,
+              "Green": 228,
+              "Blue": 219
+            }
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Back",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonOk"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "Sleep"
+            }
+          },
+          {
+            "InteractionName": "Energy",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonEnergy"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "Energy"
+            }
+          },
+          {
+            "InteractionName": "toCar",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonCar"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "Auto"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "Energy",
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "box1",
+            "Width": 800,
+            "Height": 480,
+            "Color": {
+              "Red": 18,
+              "Green": 22,
+              "Blue": 24
+            }
+          },
+          {
+            "Type": "Image",
+            "Name": "cardSolar",
+            "X": 410,
+            "Y": 88,
+            "Width": 350,
+            "Height": 170,
+            "RelativeFilename": "card_wide.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "cardFuel",
+            "X": 40,
+            "Y": 288,
+            "Width": 350,
+            "Height": 170,
+            "RelativeFilename": "card_wide.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "cardGas",
+            "X": 410,
+            "Y": 288,
+            "Width": 350,
+            "Height": 170,
+            "RelativeFilename": "card_wide.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "header",
+            "Width": 800,
+            "Height": 68,
+            "RelativeFilename": "header_bg.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "buttonOk",
+            "X": 20,
+            "Y": 14,
+            "Width": 40,
+            "Height": 40,
+            "Pressed": "icons8-Ok-40.png",
+            "Released": "icons8-Ok-40.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textTempWind",
+            "X": 235,
+            "Y": 14,
+            "Width": 331,
+            "Height": 41,
+            "TextId": "__SingleUse_SKGS",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 214,
+              "Green": 228,
+              "Blue": 219
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "toptime"
+            },
+            "Wildcard2": {
+              "TextId": "wind"
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "texttime",
+            "X": 673,
+            "Y": 14,
+            "Width": 104,
+            "Height": 41,
+            "TextId": "__SingleUse_ZWBX",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "toptime"
+            }
+          },
+          {
+            "Type": "Image",
+            "Name": "cardElektra",
+            "X": 40,
+            "Y": 88,
+            "Width": 350,
+            "Height": 170,
+            "RelativeFilename": "card_wide.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "buttonElektra",
+            "X": 60,
+            "Y": 123,
+            "Width": 100,
+            "Height": 100,
+            "Pressed": "icons8-Lightning Bolt-100.png",
+            "Released": "icons8-Lightning Bolt-100.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "labelElektra",
+            "X": 175,
+            "Y": 128,
+            "Width": 123,
+            "Height": 54,
+            "TextId": "__SingleUse_8VLY",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 120,
+              "Green": 138,
+              "Blue": 128
+            },
+            "Wildcard1": {
+              "TextId": "elektra_now"
+            }
+          },
+          {
+            "Type": "Button",
+            "Name": "buttonDSM",
+            "X": 298,
+            "Y": 102,
+            "Width": 80,
+            "Height": 80,
+            "Pressed": "icons8-counter-80.png",
+            "Released": "icons8-counter-80.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1",
+            "X": 175,
+            "Y": 203,
+            "Width": 135,
+            "Height": 41,
+            "TextId": "__SingleUse_Q8P7",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "el_kwh",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1_1",
+            "X": 556,
+            "Y": 203,
+            "Width": 135,
+            "Height": 41,
+            "TextId": "__SingleUse_ZP21",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "el_kwh",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1_1_1",
+            "X": 190,
+            "Y": 403,
+            "Width": 135,
+            "Height": 41,
+            "TextId": "__SingleUse_8YMK",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "el_kwh",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1_1_1_1",
+            "X": 566,
+            "Y": 403,
+            "Width": 136,
+            "Height": 41,
+            "TextId": "__SingleUse_SY5X",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "el_kwh",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "Button",
+            "Name": "buttonSystem_1",
+            "X": 430,
+            "Y": 123,
+            "Width": 100,
+            "Height": 100,
+            "Pressed": "icons8-Solar Panel-100.png",
+            "Released": "icons8-Solar Panel-100.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "labelSolar",
+            "X": 545,
+            "Y": 128,
+            "Width": 200,
+            "Height": 54,
+            "TextId": "lbl_solar",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 120,
+              "Green": 138,
+              "Blue": 128
+            },
+            "Wildcard1": {
+              "TextId": "solor_now"
+            }
+          },
+          {
+            "Type": "Button",
+            "Name": "buttonHeater",
+            "X": 60,
+            "Y": 323,
+            "Width": 100,
+            "Height": 100,
+            "Pressed": "icons8-gas-station-100.png",
+            "Released": "icons8-gas-station-100.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "labelFuel",
+            "X": 184,
+            "Y": 323,
+            "Width": 200,
+            "Height": 50,
+            "TextId": "lbl_fuel",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 120,
+              "Green": 138,
+              "Blue": 128
+            },
+            "Wildcard1": {
+              "TextId": "car_now"
+            }
+          },
+          {
+            "Type": "Button",
+            "Name": "buttonSystem",
+            "X": 430,
+            "Y": 323,
+            "Width": 100,
+            "Height": 100,
+            "Pressed": "icons8-Gas-100.png",
+            "Released": "icons8-Gas-100.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "labelGas",
+            "X": 545,
+            "Y": 333,
+            "Width": 200,
+            "Height": 52,
+            "TextId": "lbl_gas",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 120,
+              "Green": 138,
+              "Blue": 128
+            },
+            "Wildcard1": {
+              "TextId": "water_now"
+            }
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Back",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonOk"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "Sleep"
+            }
+          },
+          {
+            "InteractionName": "toDSM",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonDSM"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "DSM"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "DSM",
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "box1",
+            "Width": 800,
+            "Height": 480,
+            "Color": {
+              "Red": 18,
+              "Green": 22,
+              "Blue": 24
+            }
+          },
+          {
+            "Type": "Image",
+            "Name": "header",
+            "Width": 800,
+            "Height": 68,
+            "RelativeFilename": "header_bg.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "buttonOk",
+            "X": 20,
+            "Y": 14,
+            "Width": 40,
+            "Height": 40,
+            "Pressed": "icons8-Ok-40.png",
+            "Released": "icons8-Ok-40.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textTempWind",
+            "X": 360,
+            "Y": 13,
+            "Width": 81,
+            "Height": 41,
+            "TextId": "__SingleUse_ET6D",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 214,
+              "Green": 228,
+              "Blue": 219
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "texttime",
+            "X": 673,
+            "Y": 14,
+            "Width": 104,
+            "Height": 41,
+            "TextId": "__SingleUse_RK1U",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "toptime"
+            }
+          },
+          {
+            "Type": "Box",
+            "Name": "rowEquipment",
+            "X": 20,
+            "Y": 83,
+            "Width": 760,
+            "Height": 34,
+            "Color": {
+              "Red": 27,
+              "Green": 34,
+              "Blue": 36
+            }
+          },
+          {
+            "Type": "Box",
+            "Name": "rowP1msg",
+            "X": 20,
+            "Y": 153,
+            "Width": 760,
+            "Height": 34,
+            "Color": {
+              "Red": 27,
+              "Green": 34,
+              "Blue": 36
+            }
+          },
+          {
+            "Type": "Box",
+            "Name": "rowProduce",
+            "X": 20,
+            "Y": 223,
+            "Width": 760,
+            "Height": 34,
+            "Color": {
+              "Red": 27,
+              "Green": 34,
+              "Blue": 36
+            }
+          },
+          {
+            "Type": "Box",
+            "Name": "rowActCons",
+            "X": 20,
+            "Y": 293,
+            "Width": 760,
+            "Height": 34,
+            "Color": {
+              "Red": 27,
+              "Green": 34,
+              "Blue": 36
+            }
+          },
+          {
+            "Type": "Box",
+            "Name": "rowSags",
+            "X": 20,
+            "Y": 363,
+            "Width": 760,
+            "Height": 34,
+            "Color": {
+              "Red": 27,
+              "Green": 34,
+              "Blue": 36
+            }
+          },
+          {
+            "Type": "Box",
+            "Name": "rowGas",
+            "X": 20,
+            "Y": 433,
+            "Width": 760,
+            "Height": 34,
+            "Color": {
+              "Red": 27,
+              "Green": 34,
+              "Blue": 36
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "lblEquipment",
+            "X": 40,
+            "Y": 88,
+            "Width": 340,
+            "Height": 24,
+            "TextId": "lbl_dsm_equipment",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 160,
+              "Green": 178,
+              "Blue": 168
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "lblVersion",
+            "X": 40,
+            "Y": 123,
+            "Width": 340,
+            "Height": 24,
+            "TextId": "lbl_dsm_version",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 160,
+              "Green": 178,
+              "Blue": 168
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "lblP1msg",
+            "X": 40,
+            "Y": 158,
+            "Width": 340,
+            "Height": 24,
+            "TextId": "lbl_dsm_p1msg",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 160,
+              "Green": 178,
+              "Blue": 168
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "lblConsumed",
+            "X": 40,
+            "Y": 193,
+            "Width": 340,
+            "Height": 24,
+            "TextId": "lbl_dsm_consumed",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 160,
+              "Green": 178,
+              "Blue": 168
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "lblProduce",
+            "X": 40,
+            "Y": 228,
+            "Width": 340,
+            "Height": 24,
+            "TextId": "lbl_dsm_produce",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 160,
+              "Green": 178,
+              "Blue": 168
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "lblTariff",
+            "X": 40,
+            "Y": 263,
+            "Width": 340,
+            "Height": 24,
+            "TextId": "lbl_dsm_tariff",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 160,
+              "Green": 178,
+              "Blue": 168
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "lblActCons",
+            "X": 40,
+            "Y": 298,
+            "Width": 340,
+            "Height": 24,
+            "TextId": "lbl_dsm_actcons",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 160,
+              "Green": 178,
+              "Blue": 168
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "lblActProd",
+            "X": 40,
+            "Y": 333,
+            "Width": 340,
+            "Height": 24,
+            "TextId": "lbl_dsm_actprod",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 160,
+              "Green": 178,
+              "Blue": 168
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "lblSags",
+            "X": 40,
+            "Y": 368,
+            "Width": 340,
+            "Height": 24,
+            "TextId": "lbl_dsm_sags",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 160,
+              "Green": 178,
+              "Blue": 168
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "lblSwell",
+            "X": 40,
+            "Y": 403,
+            "Width": 340,
+            "Height": 24,
+            "TextId": "lbl_dsm_swell",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 160,
+              "Green": 178,
+              "Blue": 168
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "lblGas",
+            "X": 40,
+            "Y": 438,
+            "Width": 340,
+            "Height": 24,
+            "TextId": "lbl_dsm_gas",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 160,
+              "Green": 178,
+              "Blue": 168
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "valEquipment",
+            "X": 400,
+            "Y": 88,
+            "Width": 370,
+            "Height": 24,
+            "TextId": "dsm_t_equipment",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 233,
+              "Green": 255,
+              "Blue": 240
+            },
+            "Wildcard1": {
+              "TextId": "val_eq",
+              "UseBuffer": true,
+              "BufferSize": 40
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "valVersion",
+            "X": 400,
+            "Y": 123,
+            "Width": 370,
+            "Height": 24,
+            "TextId": "dsm_t_version",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 233,
+              "Green": 255,
+              "Blue": 240
+            },
+            "Wildcard1": {
+              "TextId": "val_version",
+              "UseBuffer": true,
+              "BufferSize": 12
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "valP1msg",
+            "X": 400,
+            "Y": 158,
+            "Width": 370,
+            "Height": 24,
+            "TextId": "dsm_t_p1msg",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 233,
+              "Green": 255,
+              "Blue": 240
+            },
+            "Wildcard1": {
+              "TextId": "val_p1msg",
+              "UseBuffer": true,
+              "BufferSize": 64
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "valConsumed",
+            "X": 400,
+            "Y": 193,
+            "Width": 370,
+            "Height": 24,
+            "TextId": "dsm_t_consumed",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 233,
+              "Green": 255,
+              "Blue": 240
+            },
+            "Wildcard1": {
+              "TextId": "val_consumed",
+              "UseBuffer": true,
+              "BufferSize": 16
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "valProduce",
+            "X": 400,
+            "Y": 228,
+            "Width": 370,
+            "Height": 24,
+            "TextId": "dsm_t_produce",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 233,
+              "Green": 255,
+              "Blue": 240
+            },
+            "Wildcard1": {
+              "TextId": "val_produced",
+              "UseBuffer": true,
+              "BufferSize": 16
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "valTariff",
+            "X": 400,
+            "Y": 263,
+            "Width": 370,
+            "Height": 24,
+            "TextId": "dsm_t_tariff",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 233,
+              "Green": 255,
+              "Blue": 240
+            },
+            "Wildcard1": {
+              "TextId": "val_tariff",
+              "UseBuffer": true,
+              "BufferSize": 8
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "valActCons",
+            "X": 400,
+            "Y": 298,
+            "Width": 370,
+            "Height": 24,
+            "TextId": "dsm_t_actcons",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 233,
+              "Green": 255,
+              "Blue": 240
+            },
+            "Wildcard1": {
+              "TextId": "val_act_cons",
+              "UseBuffer": true,
+              "BufferSize": 12
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "valActProd",
+            "X": 400,
+            "Y": 333,
+            "Width": 370,
+            "Height": 24,
+            "TextId": "dsm_t_actprod",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 233,
+              "Green": 255,
+              "Blue": 240
+            },
+            "Wildcard1": {
+              "TextId": "val_act_prod",
+              "UseBuffer": true,
+              "BufferSize": 12
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "valSags",
+            "X": 400,
+            "Y": 368,
+            "Width": 370,
+            "Height": 24,
+            "TextId": "dsm_t_sags",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 233,
+              "Green": 255,
+              "Blue": 240
+            },
+            "Wildcard1": {
+              "TextId": "val_sags",
+              "UseBuffer": true,
+              "BufferSize": 20
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "valSwell",
+            "X": 400,
+            "Y": 403,
+            "Width": 370,
+            "Height": 24,
+            "TextId": "dsm_t_swell",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 233,
+              "Green": 255,
+              "Blue": 240
+            },
+            "Wildcard1": {
+              "TextId": "val_swell",
+              "UseBuffer": true,
+              "BufferSize": 20
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "valGas",
+            "X": 400,
+            "Y": 438,
+            "Width": 370,
+            "Height": 24,
+            "TextId": "dsm_t_gas",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 233,
+              "Green": 255,
+              "Blue": 240
+            },
+            "Wildcard1": {
+              "TextId": "val_gas",
+              "UseBuffer": true,
+              "BufferSize": 16
+            }
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Back",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonOk"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "Sleep"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "Auto",
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "box1",
+            "Width": 800,
+            "Height": 480,
+            "Color": {
+              "Red": 18,
+              "Green": 22,
+              "Blue": 24
+            }
+          },
+          {
+            "Type": "Image",
+            "Name": "header",
+            "Width": 800,
+            "Height": 68,
+            "RelativeFilename": "header_bg.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "buttonOk",
+            "X": 20,
+            "Y": 14,
+            "Width": 40,
+            "Height": 40,
+            "Pressed": "icons8-Ok-40.png",
+            "Released": "icons8-Ok-40.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "buttonOk_1",
+            "X": 471,
+            "Y": 368,
+            "Width": 48,
+            "Height": 48,
+            "Pressed": "icons8-Double Left-48.png",
+            "Released": "icons8-Double Left-48.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "buttonOk_1_1",
+            "X": 632,
+            "Y": 368,
+            "Width": 48,
+            "Height": 48,
+            "Pressed": "icons8-Double Right-48.png",
+            "Released": "icons8-Double Right-48.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textTempWind",
+            "X": 235,
+            "Y": 14,
+            "Width": 282,
+            "Height": 41,
+            "TextId": "__SingleUse_Q1LL",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 214,
+              "Green": 228,
+              "Blue": 219
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "texttime",
+            "X": 673,
+            "Y": 14,
+            "Width": 104,
+            "Height": 41,
+            "TextId": "__SingleUse_X7VP",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "toptime"
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1",
+            "X": 110,
+            "Y": 144,
+            "Width": 97,
+            "Height": 24,
+            "TextId": "__SingleUse_OMDQ",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_OV62",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1_2",
+            "X": 69,
+            "Y": 356,
+            "Width": 179,
+            "Height": 48,
+            "TextId": "__SingleUse_OX1C",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_RKZD",
+              "UseBuffer": true,
+              "BufferSize": 10
+            },
+            "Wildcard2": {
+              "TextId": "__SingleUse_CHU6"
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1_1",
+            "X": 472,
+            "Y": 132,
+            "Width": 115,
+            "Height": 24,
+            "TextId": "__SingleUse_8FA1",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_C723",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1_1_2",
+            "X": 472,
+            "Y": 216,
+            "Width": 45,
+            "Height": 24,
+            "TextId": "__SingleUse_51VY",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1_1_2_1_1",
+            "X": 553,
+            "Y": 368,
+            "Width": 45,
+            "Height": 48,
+            "TextId": "__SingleUse_PUEU",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_494P"
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1_1_2_1",
+            "X": 471,
+            "Y": 291,
+            "Width": 52,
+            "Height": 24,
+            "TextId": "__SingleUse_YO5W",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "Button",
+            "Name": "buttonAuto",
+            "X": 110,
+            "Y": 203,
+            "Width": 100,
+            "Height": 100,
+            "Pressed": "icons8-nocar-100.png",
+            "Released": "icons8-car-100.png"
+          },
+          {
+            "Type": "RadioButton",
+            "Name": "radioButton1",
+            "X": 375,
+            "Y": 119,
+            "Width": 50,
+            "Height": 50,
+            "Selected": true,
+            "FileNameSelected": "__generated\\alternate_theme_images_widgets_radiobutton_check_large_round_on_action.png",
+            "FileNameSelectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_check_large_round_on_pressed.png",
+            "FileNameUnselected": "__generated\\alternate_theme_images_widgets_radiobutton_check_large_round_off.png",
+            "FileNameUnselectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_check_large_round_off_pressed.png",
+            "RadioButtonGroup": "radioButtonGroup1",
+            "Preset": "alternate_theme\\presets\\radiobutton\\check\\large_action_round.json"
+          },
+          {
+            "Type": "RadioButton",
+            "Name": "radioButton2",
+            "X": 375,
+            "Y": 197,
+            "Width": 50,
+            "Height": 50,
+            "Selected": true,
+            "FileNameSelected": "__generated\\alternate_theme_images_widgets_radiobutton_check_large_round_on_action.png",
+            "FileNameSelectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_check_large_round_on_pressed.png",
+            "FileNameUnselected": "__generated\\alternate_theme_images_widgets_radiobutton_check_large_round_off.png",
+            "FileNameUnselectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_check_large_round_off_pressed.png",
+            "RadioButtonGroup": "radioButtonGroup1",
+            "Preset": "alternate_theme\\presets\\radiobutton\\check\\large_action_round.json"
+          },
+          {
+            "Type": "RadioButton",
+            "Name": "radioButton3",
+            "X": 375,
+            "Y": 278,
+            "Width": 50,
+            "Height": 50,
+            "Selected": true,
+            "FileNameSelected": "__generated\\alternate_theme_images_widgets_radiobutton_check_large_round_on_action.png",
+            "FileNameSelectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_check_large_round_on_pressed.png",
+            "FileNameUnselected": "__generated\\alternate_theme_images_widgets_radiobutton_check_large_round_off.png",
+            "FileNameUnselectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_check_large_round_off_pressed.png",
+            "RadioButtonGroup": "radioButtonGroup1",
+            "Preset": "alternate_theme\\presets\\radiobutton\\check\\large_action_round.json"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Back",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonOk"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "Sleep"
+            }
+          }
+        ]
+      }
+    ],
+    "CustomContainerDefinitions": [],
+    "Name": "Project_GatewayTFT",
+    "Resolution": {
+      "Width": 800,
+      "Height": 480
+    },
+    "SelectedColorDepth": 16,
+    "StartupScreenName": "Sleep",
+    "SelectedStartupLanguage": "GB",
+    "TouchGfxPath": "../Middlewares/ST/touchgfx",
+    "UIPath": ".",
+    "AvailableColorDepths": [
+      16
+    ],
+    "AvailableLCDs": {
+      "16": "LCD16bpp"
+    },
+    "AvailableSections": [
+      "ExtFlashSection",
+      "IntFlashSection"
+    ],
+    "AvailableResolutions": [
+      {
+        "Width": 800,
+        "Height": 480
+      }
+    ],
+    "PhysicalButtons": [],
+    "FrameworkFeatures": {
+      "LCD16bpp": {
+        "Id": "LCD16bpp",
+        "IsEnabled": false
+      }
+    },
+    "GenerateAssetsCommand": "make -f simulator/gcc/Makefile assets -j8",
+    "PostGenerateCommand": "touchgfx update_project --project-file=simulator/msvs/Application.vcxproj",
+    "PostGenerateTargetCommand": "touchgfx update_project",
+    "CompileSimulatorCommand": "make -f simulator/gcc/Makefile -j8",
+    "RunSimulatorCommand": "build\\bin\\simulator.exe",
+    "LandscapeSkinX": 0,
+    "LandscapeSkinY": 0,
+    "PortraitSkinX": 0,
+    "PortraitSkinY": 0,
+    "DisplayOrientation": "Landscape",
+    "Family": "STM32U5",
+    "SubFamily": "STM32U575/585",
+    "Toolchain": "STM32CubeIDE",
+    "Platform": "m33",
+    "ProjectFile": "../Project_GatewayTFT.ioc",
+    "OptionalComponentsRoot": "../Middlewares/ST/touchgfx_components",
+    "OptionalComponents": [],
+    "AdditionalFeatures": []
+  },
+  "Version": "4.26.1"
+}
