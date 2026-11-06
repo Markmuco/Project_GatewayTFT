@@ -120,7 +120,7 @@
             "X": 235,
             "Y": 14,
             "Width": 331,
-            "Height": 41,
+            "Height": 42,
             "TextId": "__SingleUse_43HX",
             "TextRotation": "0",
             "Color": {
@@ -130,7 +130,7 @@
             },
             "AutoSize": true,
             "Wildcard1": {
-              "TextId": "toptime"
+              "TextId": "toptime2"
             },
             "Wildcard2": {
               "TextId": "wind"
@@ -142,7 +142,7 @@
             "X": 673,
             "Y": 14,
             "Width": 104,
-            "Height": 41,
+            "Height": 42,
             "TextId": "__SingleUse_193F",
             "TextRotation": "0",
             "Color": {
@@ -152,7 +152,7 @@
             },
             "AutoSize": true,
             "Wildcard1": {
-              "TextId": "toptime"
+              "TextId": "toptime2"
             }
           },
           {
@@ -171,8 +171,8 @@
             "Y": 104,
             "Width": 100,
             "Height": 100,
-            "Pressed": "icons8-Energy-100.png",
-            "Released": "icons8-Energy-100.png"
+            "Pressed": "netvoeding-100.png",
+            "Released": "netvoeding-100.png"
           },
           {
             "Type": "TextArea",
@@ -191,7 +191,7 @@
           },
           {
             "Type": "Image",
-            "Name": "cardAlarm",
+            "Name": "cardBatterij",
             "X": 218,
             "Y": 88,
             "Width": 170,
@@ -200,22 +200,22 @@
           },
           {
             "Type": "Button",
-            "Name": "buttonAlarm",
+            "Name": "buttonBattery",
             "X": 253,
             "Y": 104,
             "Width": 100,
             "Height": 100,
-            "Pressed": "icons8-Home Alarm-100.png",
-            "Released": "icons8-Home Alarm-100.png"
+            "Pressed": "thuisbat-100.png",
+            "Released": "thuisbat-100.png"
           },
           {
             "Type": "TextArea",
-            "Name": "labelAlarm",
+            "Name": "labelBatterij",
             "X": 218,
             "Y": 214,
             "Width": 170,
             "Height": 28,
-            "TextId": "lbl_alarm",
+            "TextId": "lbl_batterij",
             "TextRotation": "0",
             "Color": {
               "Red": 214,
@@ -464,6 +464,30 @@
               "ScreenTransitionType": "ScreenTransitionNone",
               "ActionComponent": "Auto"
             }
+          },
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonBattery"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "Batterij"
+            }
+          },
+          {
+            "InteractionName": "Interaction2",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonLights"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "Verlichting"
+            }
           }
         ]
       },
@@ -531,7 +555,7 @@
             "X": 235,
             "Y": 14,
             "Width": 331,
-            "Height": 41,
+            "Height": 42,
             "TextId": "__SingleUse_SKGS",
             "TextRotation": "0",
             "Color": {
@@ -541,7 +565,7 @@
             },
             "AutoSize": true,
             "Wildcard1": {
-              "TextId": "toptime"
+              "TextId": "toptime2"
             },
             "Wildcard2": {
               "TextId": "wind"
@@ -553,7 +577,7 @@
             "X": 673,
             "Y": 14,
             "Width": 104,
-            "Height": 41,
+            "Height": 42,
             "TextId": "__SingleUse_ZWBX",
             "TextRotation": "0",
             "Color": {
@@ -563,7 +587,7 @@
             },
             "AutoSize": true,
             "Wildcard1": {
-              "TextId": "toptime"
+              "TextId": "toptime2"
             }
           },
           {
@@ -619,7 +643,7 @@
             "X": 175,
             "Y": 203,
             "Width": 135,
-            "Height": 41,
+            "Height": 42,
             "TextId": "__SingleUse_Q8P7",
             "TextRotation": "0",
             "Color": {
@@ -640,7 +664,7 @@
             "X": 556,
             "Y": 203,
             "Width": 135,
-            "Height": 41,
+            "Height": 42,
             "TextId": "__SingleUse_ZP21",
             "TextRotation": "0",
             "Color": {
@@ -661,7 +685,7 @@
             "X": 190,
             "Y": 403,
             "Width": 135,
-            "Height": 41,
+            "Height": 42,
             "TextId": "__SingleUse_8YMK",
             "TextRotation": "0",
             "Color": {
@@ -682,7 +706,7 @@
             "X": 566,
             "Y": 403,
             "Width": 136,
-            "Height": 41,
+            "Height": 42,
             "TextId": "__SingleUse_SY5X",
             "TextRotation": "0",
             "Color": {
@@ -792,7 +816,7 @@
             "Action": {
               "Type": "ActionGotoScreen",
               "ScreenTransitionType": "ScreenTransitionNone",
-              "ActionComponent": "Sleep"
+              "ActionComponent": "Main"
             }
           },
           {
@@ -846,7 +870,7 @@
             "X": 360,
             "Y": 13,
             "Width": 81,
-            "Height": 41,
+            "Height": 42,
             "TextId": "__SingleUse_ET6D",
             "TextRotation": "0",
             "Color": {
@@ -862,7 +886,7 @@
             "X": 673,
             "Y": 14,
             "Width": 104,
-            "Height": 41,
+            "Height": 42,
             "TextId": "__SingleUse_RK1U",
             "TextRotation": "0",
             "Color": {
@@ -872,7 +896,7 @@
             },
             "AutoSize": true,
             "Wildcard1": {
-              "TextId": "toptime"
+              "TextId": "toptime2"
             }
           },
           {
@@ -1355,6 +1379,362 @@
         ]
       },
       {
+        "Name": "Verlichting",
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "box1",
+            "Width": 800,
+            "Height": 480,
+            "Color": {
+              "Red": 18,
+              "Green": 22,
+              "Blue": 24
+            }
+          },
+          {
+            "Type": "Image",
+            "Name": "header",
+            "Width": 800,
+            "Height": 68,
+            "RelativeFilename": "header_bg.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "buttonOk",
+            "X": 20,
+            "Y": 14,
+            "Width": 40,
+            "Height": 40,
+            "Pressed": "icons8-Ok-40.png",
+            "Released": "icons8-Ok-40.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textHuis",
+            "X": 307,
+            "Y": 12,
+            "Width": 186,
+            "Height": 42,
+            "TextId": "__SingleUse_KU2W",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 214,
+              "Green": 228,
+              "Blue": 219
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "texttime",
+            "X": 673,
+            "Y": 14,
+            "Width": 104,
+            "Height": 42,
+            "TextId": "__SingleUse_R0S1",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "toptime2"
+            }
+          },
+          {
+            "Type": "Button",
+            "Name": "buttonAuto",
+            "X": 51,
+            "Y": 125,
+            "Width": 100,
+            "Height": 100,
+            "Pressed": "icons8-Lights-100.png",
+            "Released": "icons8-Lights-100.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "buttonAuto_1",
+            "X": 428,
+            "Y": 125,
+            "Width": 100,
+            "Height": 100,
+            "Pressed": "icons8-Garage-100.png",
+            "Released": "icons8-Garage-100.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "buttonAuto_1_1",
+            "X": 610,
+            "Y": 125,
+            "Width": 100,
+            "Height": 100,
+            "Pressed": "icons8-CurtainsClose-100.png",
+            "Released": "icons8-CurtainsClose-100.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "buttonAuto_1_1_1",
+            "X": 237,
+            "Y": 320,
+            "Width": 100,
+            "Height": 100,
+            "Pressed": "icons8-CurtainsClose-100.png",
+            "Released": "icons8-Staircase-100.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "buttonAuto_1_1_1_1",
+            "X": 237,
+            "Y": 125,
+            "Width": 100,
+            "Height": 100,
+            "Pressed": "icons8-Remote Control-100.png",
+            "Released": "icons8-Remote Control-100.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "buttonAuto_2",
+            "X": 60,
+            "Y": 320,
+            "Width": 100,
+            "Height": 100,
+            "Pressed": "icons8-Sleeping-100.png",
+            "Released": "icons8-Sleeping-100.png"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Back",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonOk"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "Main"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "Batterij",
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "box1",
+            "Width": 800,
+            "Height": 480,
+            "Color": {
+              "Red": 18,
+              "Green": 22,
+              "Blue": 24
+            }
+          },
+          {
+            "Type": "Image",
+            "Name": "header",
+            "Width": 800,
+            "Height": 68,
+            "RelativeFilename": "header_bg.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "buttonOk",
+            "X": 20,
+            "Y": 14,
+            "Width": 40,
+            "Height": 40,
+            "Pressed": "icons8-Ok-40.png",
+            "Released": "icons8-Ok-40.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "buttonOk_1_1",
+            "X": 205,
+            "Y": 187,
+            "Width": 48,
+            "Height": 48,
+            "Pressed": "icons8-Double Right-48.png",
+            "Released": "icons8-Double Right-48.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "buttonOk_1_1_1",
+            "X": 514,
+            "Y": 192,
+            "Width": 48,
+            "Height": 48,
+            "Pressed": "icons8-Double Right-48.png",
+            "Released": "icons8-Double Right-48.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "buttonOk_1_1_1_1",
+            "X": 547,
+            "Y": 192,
+            "Width": 48,
+            "Height": 48,
+            "Pressed": "icons8-Double Right-48.png",
+            "Released": "icons8-Double Right-48.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "buttonOk_1_1_1_2",
+            "X": 235,
+            "Y": 187,
+            "Width": 48,
+            "Height": 48,
+            "Pressed": "icons8-Double Right-48.png",
+            "Released": "icons8-Double Right-48.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textBatterij",
+            "X": 329,
+            "Y": 12,
+            "Width": 131,
+            "Height": 42,
+            "TextId": "__SingleUse_M1BA",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 214,
+              "Green": 228,
+              "Blue": 219
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "texttime",
+            "X": 673,
+            "Y": 14,
+            "Width": 104,
+            "Height": 42,
+            "TextId": "__SingleUse_82W0",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "toptime2"
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1",
+            "X": 345,
+            "Y": 278,
+            "Width": 110,
+            "Height": 48,
+            "TextId": "__SingleUse_K3YR",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_50ON",
+              "UseBuffer": true,
+              "BufferSize": 10
+            },
+            "Wildcard2": {
+              "TextId": "__SingleUse_0IJK"
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea_Charge",
+            "X": 205,
+            "Y": 278,
+            "Width": 72,
+            "Height": 48,
+            "TextId": "__SingleUse_8F4W",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_DF5D"
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1_1_2_1_2",
+            "X": 514,
+            "Y": 278,
+            "Width": 81,
+            "Height": 48,
+            "TextId": "__SingleUse_4J6X",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_16E1"
+            }
+          },
+          {
+            "Type": "Button",
+            "Name": "buttonAuto",
+            "X": 60,
+            "Y": 161,
+            "Width": 100,
+            "Height": 100,
+            "Pressed": "netvoeding-100.png",
+            "Released": "icons8-Solar Panel-100.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "buttonAuto_1",
+            "X": 653,
+            "Y": 166,
+            "Width": 100,
+            "Height": 100,
+            "Pressed": "huisnet-100.png",
+            "Released": "huisnet-100.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "buttonAuto_2",
+            "X": 350,
+            "Y": 166,
+            "Width": 100,
+            "Height": 100,
+            "Pressed": "batterij2-100.png",
+            "Released": "batterij2-100.png"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Back",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonOk"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "Main"
+            }
+          }
+        ]
+      },
+      {
         "Name": "Auto",
         "Components": [
           {
@@ -1411,7 +1791,7 @@
             "X": 235,
             "Y": 14,
             "Width": 282,
-            "Height": 41,
+            "Height": 42,
             "TextId": "__SingleUse_Q1LL",
             "TextRotation": "0",
             "Color": {
@@ -1427,7 +1807,7 @@
             "X": 673,
             "Y": 14,
             "Width": 104,
-            "Height": 41,
+            "Height": 42,
             "TextId": "__SingleUse_X7VP",
             "TextRotation": "0",
             "Color": {
@@ -1437,7 +1817,7 @@
             },
             "AutoSize": true,
             "Wildcard1": {
-              "TextId": "toptime"
+              "TextId": "toptime2"
             }
           },
           {
@@ -1466,7 +1846,7 @@
             "Name": "textArea1_2",
             "X": 69,
             "Y": 356,
-            "Width": 179,
+            "Width": 168,
             "Height": 48,
             "TextId": "__SingleUse_OX1C",
             "TextRotation": "0",
@@ -1527,7 +1907,7 @@
             "Name": "textArea1_1_2_1_1",
             "X": 553,
             "Y": 368,
-            "Width": 45,
+            "Width": 40,
             "Height": 48,
             "TextId": "__SingleUse_PUEU",
             "TextRotation": "0",
@@ -1623,7 +2003,7 @@
             "Action": {
               "Type": "ActionGotoScreen",
               "ScreenTransitionType": "ScreenTransitionNone",
-              "ActionComponent": "Sleep"
+              "ActionComponent": "Main"
             }
           }
         ]

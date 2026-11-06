@@ -6,6 +6,39 @@
   <Texts>
     <TextGroup Id="Group1" />
     <TextGroup Id="Unsorted">
+      <Text Id="__SingleUse_R0S1" Alignment="Center" TypographyId="Large">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_KU2W" Alignment="Center" TypographyId="Large">
+        <Translation Language="GB">Verlichting</Translation>
+      </Text>
+      <Text Id="__SingleUse_0IJK" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">15.3</Translation>
+      </Text>
+      <Text Id="__SingleUse_16E1" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">1500</Translation>
+      </Text>
+      <Text Id="__SingleUse_DF5D" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">1455</Translation>
+      </Text>
+      <Text Id="__SingleUse_4J6X" Alignment="Center" TypographyId="Typography1">
+        <Translation Language="GB">Leveren&#10;&lt;value&gt;W</Translation>
+      </Text>
+      <Text Id="__SingleUse_8F4W" Alignment="Center" TypographyId="Typography1">
+        <Translation Language="GB">Lader&#10;&lt;value&gt;W</Translation>
+      </Text>
+      <Text Id="__SingleUse_50ON" Alignment="Left" TypographyId="Typography1">
+        <Translation Language="GB">65</Translation>
+      </Text>
+      <Text Id="__SingleUse_K3YR" Alignment="Center" TypographyId="Typography1">
+        <Translation Language="GB">SOC &lt;value&gt;%&#10;&lt;value&gt;kWh</Translation>
+      </Text>
+      <Text Id="__SingleUse_82W0" Alignment="Center" TypographyId="Large">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_M1BA" Alignment="Center" TypographyId="Large">
+        <Translation Language="GB">Batterij</Translation>
+      </Text>
       <Text Id="__SingleUse_C723" Alignment="Left" TypographyId="Typography1">
         <Translation Language="GB">3:30</Translation>
       </Text>
@@ -96,7 +129,7 @@
       <Text Id="wind" Alignment="Left" TypographyId="Default">
         <Translation Language="GB">10.0</Translation>
       </Text>
-      <Text Id="toptime" Alignment="Left" TypographyId="Default">
+      <Text Id="toptime2" Alignment="Left" TypographyId="Default">
         <Translation Language="GB">19:15</Translation>
       </Text>
       <Text Id="realtime" Alignment="Left" TypographyId="Default">
@@ -126,11 +159,11 @@
       <Text Id="lbl_energy" Alignment="Center" TypographyId="Typography1">
         <Translation Language="GB">Energie</Translation>
       </Text>
-      <Text Id="lbl_alarm" Alignment="Center" TypographyId="Typography1">
-        <Translation Language="GB">Alarm</Translation>
+      <Text Id="lbl_batterij" Alignment="Center" TypographyId="Typography1">
+        <Translation Language="GB">Batterij</Translation>
       </Text>
       <Text Id="lbl_lights" Alignment="Center" TypographyId="Typography1">
-        <Translation Language="GB">Huis</Translation>
+        <Translation Language="GB">Verlichting</Translation>
       </Text>
       <Text Id="lbl_env" Alignment="Center" TypographyId="Typography1">
         <Translation Language="GB">Omgeving</Translation>

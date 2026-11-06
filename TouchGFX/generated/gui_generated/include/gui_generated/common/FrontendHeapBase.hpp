@@ -20,6 +20,10 @@
 #include <gui/energy_screen/EnergyPresenter.hpp>
 #include <gui/dsm_screen/DSMView.hpp>
 #include <gui/dsm_screen/DSMPresenter.hpp>
+#include <gui/verlichting_screen/VerlichtingView.hpp>
+#include <gui/verlichting_screen/VerlichtingPresenter.hpp>
+#include <gui/batterij_screen/BatterijView.hpp>
+#include <gui/batterij_screen/BatterijPresenter.hpp>
 #include <gui/auto_screen/AutoView.hpp>
 #include <gui/auto_screen/AutoPresenter.hpp>
 
@@ -48,8 +52,10 @@ public:
             touchgfx::meta::TypeList< MainView,
             touchgfx::meta::TypeList< EnergyView,
             touchgfx::meta::TypeList< DSMView,
+            touchgfx::meta::TypeList< VerlichtingView,
+            touchgfx::meta::TypeList< BatterijView,
             touchgfx::meta::TypeList< AutoView,
-            touchgfx::meta::Nil > > > >
+            touchgfx::meta::Nil > > > > > >
             > GeneratedViewTypes;
 
     /**
@@ -65,8 +71,10 @@ public:
             touchgfx::meta::TypeList< MainPresenter,
             touchgfx::meta::TypeList< EnergyPresenter,
             touchgfx::meta::TypeList< DSMPresenter,
+            touchgfx::meta::TypeList< VerlichtingPresenter,
+            touchgfx::meta::TypeList< BatterijPresenter,
             touchgfx::meta::TypeList< AutoPresenter,
-            touchgfx::meta::Nil > > > >
+            touchgfx::meta::Nil > > > > > >
             > GeneratedPresenterTypes;
 
     /**

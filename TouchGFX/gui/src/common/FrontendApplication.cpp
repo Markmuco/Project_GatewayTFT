@@ -3,7 +3,7 @@
 
 // RAM cache for the decompressed (L8 RLE) images of the active screen, largest screen needs ~176 KB.
 // Here (not in TouchGFXHAL) so simulator and target both get it.
-static uint16_t bitmapCache[200 * 1024 / 2] __attribute__((aligned(4)));
+static uint16_t bitmapCache[198 * 1024 / 2] __attribute__((aligned(4)));
 
 FrontendApplication::FrontendApplication(Model& m, FrontendHeap& heap)
     : FrontendApplicationBase(m, heap)

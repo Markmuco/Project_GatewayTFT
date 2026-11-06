@@ -232,6 +232,30 @@
     <Filter Include="Header Files\generated\gui_generated\auto_screen">
       <UniqueIdentifier>594AD1C6-51AF-0541-A578-BF0FB04DA8CA</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\gui\batterij_screen">
+      <UniqueIdentifier>74D07211-B55B-0A57-CA23-15C75E72FE7F</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\batterij_screen">
+      <UniqueIdentifier>027426F1-EB84-1C11-8C1B-69A0B45E5CA9</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\batterij_screen">
+      <UniqueIdentifier>47421F10-2C2F-BC65-160D-DC83E03B0464</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\batterij_screen">
+      <UniqueIdentifier>A1BE9BF9-98F4-35B8-6ED0-F4FC8FB377D0</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gui\verlichting_screen">
+      <UniqueIdentifier>9F846807-8549-6244-FC96-016A7DE3A497</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\verlichting_screen">
+      <UniqueIdentifier>9EF1D215-72C0-FBF8-357D-363B45EC747B</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\verlichting_screen">
+      <UniqueIdentifier>5C40CE04-8E4F-2B2F-70AE-55FD05F78451</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\verlichting_screen">
+      <UniqueIdentifier>0B94B1CD-5B47-C44A-D23E-AA67159C2B4A</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(TouchGFXReleasePath)\framework\source\platform\driver\touch\SDL2TouchController.cpp">
@@ -308,6 +332,24 @@
     </ClCompile>
     <ClCompile Include="..\..\generated\gui_generated\src\auto_screen\AutoViewBase.cpp">
       <Filter>Source Files\generated\gui_generated\auto_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\batterij_screen\BatterijPresenter.cpp">
+      <Filter>Source Files\gui\batterij_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\batterij_screen\BatterijView.cpp">
+      <Filter>Source Files\gui\batterij_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\batterij_screen\BatterijViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\batterij_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\verlichting_screen\VerlichtingPresenter.cpp">
+      <Filter>Source Files\gui\verlichting_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\verlichting_screen\VerlichtingView.cpp">
+      <Filter>Source Files\gui\verlichting_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\verlichting_screen\VerlichtingViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\verlichting_screen</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -798,6 +840,24 @@
     </ClInclude>
     <ClInclude Include="..\..\gui\include\gui\common\BitmapCache.hpp">
       <Filter>Header Files\gui\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\batterij_screen\BatterijPresenter.hpp">
+      <Filter>Header Files\gui\batterij_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\batterij_screen\BatterijView.hpp">
+      <Filter>Header Files\gui\batterij_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\batterij_screen\BatterijViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\batterij_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\verlichting_screen\VerlichtingPresenter.hpp">
+      <Filter>Header Files\gui\verlichting_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\verlichting_screen\VerlichtingView.hpp">
+      <Filter>Header Files\gui\verlichting_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\verlichting_screen\VerlichtingViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\verlichting_screen</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

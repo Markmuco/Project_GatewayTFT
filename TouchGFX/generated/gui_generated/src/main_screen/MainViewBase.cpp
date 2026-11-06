@@ -29,7 +29,7 @@ MainViewBase::MainViewBase() :
     textTempWind.setXY(235, 14);
     textTempWind.setColor(touchgfx::Color::getColorFromRGB(214, 228, 219));
     textTempWind.setLinespacing(0);
-    textTempWind.setWildcard1(touchgfx::TypedText(T_TOPTIME).getText());
+    textTempWind.setWildcard1(touchgfx::TypedText(T_TOPTIME2).getText());
     textTempWind.setWildcard2(touchgfx::TypedText(T_WIND).getText());
     textTempWind.resizeToCurrentText();
     textTempWind.setTypedText(touchgfx::TypedText(T___SINGLEUSE_43HX));
@@ -38,7 +38,7 @@ MainViewBase::MainViewBase() :
     texttime.setXY(673, 14);
     texttime.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     texttime.setLinespacing(0);
-    texttime.setWildcard(touchgfx::TypedText(T_TOPTIME).getText());
+    texttime.setWildcard(touchgfx::TypedText(T_TOPTIME2).getText());
     texttime.resizeToCurrentText();
     texttime.setTypedText(touchgfx::TypedText(T___SINGLEUSE_193F));
     add(texttime);
@@ -48,7 +48,7 @@ MainViewBase::MainViewBase() :
     add(cardEnergy);
 
     buttonEnergy.setXY(59, 104);
-    buttonEnergy.setBitmaps(touchgfx::Bitmap(BITMAP_ICONS8_ENERGY_100_ID), touchgfx::Bitmap(BITMAP_ICONS8_ENERGY_100_ID));
+    buttonEnergy.setBitmaps(touchgfx::Bitmap(BITMAP_NETVOEDING_100_ID), touchgfx::Bitmap(BITMAP_NETVOEDING_100_ID));
     buttonEnergy.setAction(buttonCallback);
     add(buttonEnergy);
 
@@ -58,19 +58,20 @@ MainViewBase::MainViewBase() :
     labelEnergy.setTypedText(touchgfx::TypedText(T_LBL_ENERGY));
     add(labelEnergy);
 
-    cardAlarm.setXY(218, 88);
-    cardAlarm.setBitmap(touchgfx::Bitmap(BITMAP_CARD_SQUARE_ID));
-    add(cardAlarm);
+    cardBatterij.setXY(218, 88);
+    cardBatterij.setBitmap(touchgfx::Bitmap(BITMAP_CARD_SQUARE_ID));
+    add(cardBatterij);
 
-    buttonAlarm.setXY(253, 104);
-    buttonAlarm.setBitmaps(touchgfx::Bitmap(BITMAP_ICONS8_HOME_ALARM_100_ID), touchgfx::Bitmap(BITMAP_ICONS8_HOME_ALARM_100_ID));
-    add(buttonAlarm);
+    buttonBattery.setXY(253, 104);
+    buttonBattery.setBitmaps(touchgfx::Bitmap(BITMAP_THUISBAT_100_ID), touchgfx::Bitmap(BITMAP_THUISBAT_100_ID));
+    buttonBattery.setAction(buttonCallback);
+    add(buttonBattery);
 
-    labelAlarm.setPosition(218, 214, 170, 28);
-    labelAlarm.setColor(touchgfx::Color::getColorFromRGB(214, 228, 219));
-    labelAlarm.setLinespacing(0);
-    labelAlarm.setTypedText(touchgfx::TypedText(T_LBL_ALARM));
-    add(labelAlarm);
+    labelBatterij.setPosition(218, 214, 170, 28);
+    labelBatterij.setColor(touchgfx::Color::getColorFromRGB(214, 228, 219));
+    labelBatterij.setLinespacing(0);
+    labelBatterij.setTypedText(touchgfx::TypedText(T_LBL_BATTERIJ));
+    add(labelBatterij);
 
     cardLights.setXY(412, 88);
     cardLights.setBitmap(touchgfx::Bitmap(BITMAP_CARD_SQUARE_ID));
@@ -78,6 +79,7 @@ MainViewBase::MainViewBase() :
 
     buttonLights.setXY(447, 104);
     buttonLights.setBitmaps(touchgfx::Bitmap(BITMAP_ICONS8_IDEA_100_ID), touchgfx::Bitmap(BITMAP_ICONS8_IDEA_100_ID));
+    buttonLights.setAction(buttonCallback);
     add(buttonLights);
 
     labelLights.setPosition(412, 214, 170, 28);
@@ -190,5 +192,19 @@ void MainViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
         //When buttonCar clicked change screen to Auto
         //Go to Auto with no screen transition
         application().gotoAutoScreenNoTransition();
+    }
+    if (&src == &buttonBattery)
+    {
+        //Interaction1
+        //When buttonBattery clicked change screen to Batterij
+        //Go to Batterij with no screen transition
+        application().gotoBatterijScreenNoTransition();
+    }
+    if (&src == &buttonLights)
+    {
+        //Interaction2
+        //When buttonLights clicked change screen to Verlichting
+        //Go to Verlichting with no screen transition
+        application().gotoVerlichtingScreenNoTransition();
     }
 }

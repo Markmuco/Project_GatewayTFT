@@ -16,6 +16,10 @@
 #include <gui/energy_screen/EnergyPresenter.hpp>
 #include <gui/dsm_screen/DSMView.hpp>
 #include <gui/dsm_screen/DSMPresenter.hpp>
+#include <gui/verlichting_screen/VerlichtingView.hpp>
+#include <gui/verlichting_screen/VerlichtingPresenter.hpp>
+#include <gui/batterij_screen/BatterijView.hpp>
+#include <gui/batterij_screen/BatterijPresenter.hpp>
 #include <gui/auto_screen/AutoView.hpp>
 #include <gui/auto_screen/AutoPresenter.hpp>
 
@@ -85,6 +89,32 @@ void FrontendApplicationBase::gotoDSMScreenNoTransition()
 void FrontendApplicationBase::gotoDSMScreenNoTransitionImpl()
 {
     touchgfx::makeTransition<DSMView, DSMPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+}
+
+// Verlichting
+
+void FrontendApplicationBase::gotoVerlichtingScreenNoTransition()
+{
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoVerlichtingScreenNoTransitionImpl);
+    pendingScreenTransitionCallback = &transitionCallback;
+}
+
+void FrontendApplicationBase::gotoVerlichtingScreenNoTransitionImpl()
+{
+    touchgfx::makeTransition<VerlichtingView, VerlichtingPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+}
+
+// Batterij
+
+void FrontendApplicationBase::gotoBatterijScreenNoTransition()
+{
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoBatterijScreenNoTransitionImpl);
+    pendingScreenTransitionCallback = &transitionCallback;
+}
+
+void FrontendApplicationBase::gotoBatterijScreenNoTransitionImpl()
+{
+    touchgfx::makeTransition<BatterijView, BatterijPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }
 
 // Auto

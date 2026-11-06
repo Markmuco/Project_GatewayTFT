@@ -41,7 +41,7 @@ EnergyViewBase::EnergyViewBase() :
     textTempWind.setXY(235, 14);
     textTempWind.setColor(touchgfx::Color::getColorFromRGB(214, 228, 219));
     textTempWind.setLinespacing(0);
-    textTempWind.setWildcard1(touchgfx::TypedText(T_TOPTIME).getText());
+    textTempWind.setWildcard1(touchgfx::TypedText(T_TOPTIME2).getText());
     textTempWind.setWildcard2(touchgfx::TypedText(T_WIND).getText());
     textTempWind.resizeToCurrentText();
     textTempWind.setTypedText(touchgfx::TypedText(T___SINGLEUSE_SKGS));
@@ -50,7 +50,7 @@ EnergyViewBase::EnergyViewBase() :
     texttime.setXY(673, 14);
     texttime.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     texttime.setLinespacing(0);
-    texttime.setWildcard(touchgfx::TypedText(T_TOPTIME).getText());
+    texttime.setWildcard(touchgfx::TypedText(T_TOPTIME2).getText());
     texttime.resizeToCurrentText();
     texttime.setTypedText(touchgfx::TypedText(T___SINGLEUSE_ZWBX));
     add(texttime);
@@ -160,9 +160,9 @@ void EnergyViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
     if (&src == &buttonOk)
     {
         //Back
-        //When buttonOk clicked change screen to Sleep
-        //Go to Sleep with no screen transition
-        application().gotoSleepScreenNoTransition();
+        //When buttonOk clicked change screen to Main
+        //Go to Main with no screen transition
+        application().gotoMainScreenNoTransition();
     }
     if (&src == &buttonDSM)
     {

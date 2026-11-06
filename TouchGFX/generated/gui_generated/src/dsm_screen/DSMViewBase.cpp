@@ -35,7 +35,7 @@ DSMViewBase::DSMViewBase() :
     texttime.setXY(673, 14);
     texttime.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     texttime.setLinespacing(0);
-    texttime.setWildcard(touchgfx::TypedText(T_TOPTIME).getText());
+    texttime.setWildcard(touchgfx::TypedText(T_TOPTIME2).getText());
     texttime.resizeToCurrentText();
     texttime.setTypedText(touchgfx::TypedText(T___SINGLEUSE_RK1U));
     add(texttime);

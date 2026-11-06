@@ -32,6 +32,12 @@ public:
     // DSM
     void gotoDSMScreenNoTransition();
 
+    // Verlichting
+    void gotoVerlichtingScreenNoTransition();
+
+    // Batterij
+    void gotoBatterijScreenNoTransition();
+
     // Auto
     void gotoAutoScreenNoTransition();
 
@@ -51,6 +57,12 @@ protected:
 
     // DSM
     void gotoDSMScreenNoTransitionImpl();
+
+    // Verlichting
+    void gotoVerlichtingScreenNoTransitionImpl();
+
+    // Batterij
+    void gotoBatterijScreenNoTransitionImpl();
 
     // Auto
     void gotoAutoScreenNoTransitionImpl();

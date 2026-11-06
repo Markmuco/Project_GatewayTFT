@@ -37,9 +37,9 @@ protected:
     touchgfx::Image cardEnergy;
     touchgfx::Button buttonEnergy;
     touchgfx::TextArea labelEnergy;
-    touchgfx::Image cardAlarm;
-    touchgfx::Button buttonAlarm;
-    touchgfx::TextArea labelAlarm;
+    touchgfx::Image cardBatterij;
+    touchgfx::Button buttonBattery;
+    touchgfx::TextArea labelBatterij;
     touchgfx::Image cardLights;
     touchgfx::Button buttonLights;
     touchgfx::TextArea labelLights;

@@ -13,7 +13,7 @@ makefile_path := $(call qs,$(dir $(call sq,$(abspath $(call sq,$(makefile_name))
 # Get path where the Application is
 application_path := $(call qs,$(abspath $(call sq,$(makefile_path)../..)))
 
-.PHONY: clean assets all
+.PHONY: clean assets all update_bitmap_lists
 
 ifneq ($(words $(makefile_path))$(words $(MAKEFILE_LIST)),11)
 all clean assets:
@@ -25,6 +25,12 @@ ADDITIONAL_INCLUDE_PATHS := ../Core/Inc
 ADDITIONAL_LIBRARY_PATHS := 
 ADDITIONAL_LIBRARIES :=
 export ADDITIONAL_SOURCES ADDITIONAL_INCLUDE_PATHS ADDITIONAL_LIBRARY_PATHS ADDITIONAL_LIBRARIES
+
+# Keep the bitmap cache lists of the views in sync with the screens (Generate Code / Run Simulator).
+# A failure (e.g. python not found) does not stop the build.
+all assets: update_bitmap_lists
+update_bitmap_lists:
+	-@python "$(application_path)/tools/update_bitmap_lists.py"
 
 all: $(filter assets,$(MAKECMDGOALS))
 all assets: $(filter clean,$(MAKECMDGOALS))

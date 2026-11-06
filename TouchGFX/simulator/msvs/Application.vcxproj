@@ -36,6 +36,12 @@
     <ClCompile Include="..\..\gui\src\auto_screen\AutoPresenter.cpp"/>
     <ClCompile Include="..\..\gui\src\auto_screen\AutoView.cpp"/>
     <ClCompile Include="..\..\generated\gui_generated\src\auto_screen\AutoViewBase.cpp"/>
+    <ClCompile Include="..\..\gui\src\batterij_screen\BatterijPresenter.cpp"/>
+    <ClCompile Include="..\..\gui\src\batterij_screen\BatterijView.cpp"/>
+    <ClCompile Include="..\..\generated\gui_generated\src\batterij_screen\BatterijViewBase.cpp"/>
+    <ClCompile Include="..\..\gui\src\verlichting_screen\VerlichtingPresenter.cpp"/>
+    <ClCompile Include="..\..\gui\src\verlichting_screen\VerlichtingView.cpp"/>
+    <ClCompile Include="..\..\generated\gui_generated\src\verlichting_screen\VerlichtingViewBase.cpp"/>
   </ItemGroup>
   <ItemGroup>
     <None Include="$(ApplicationRoot)\assets\texts\texts.xml"/>
@@ -202,6 +208,12 @@
     <ClInclude Include="..\..\gui\include\gui\auto_screen\AutoView.hpp"/>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\auto_screen\AutoViewBase.hpp"/>
     <ClInclude Include="..\..\gui\include\gui\common\BitmapCache.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\batterij_screen\BatterijPresenter.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\batterij_screen\BatterijView.hpp"/>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\batterij_screen\BatterijViewBase.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\verlichting_screen\VerlichtingPresenter.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\verlichting_screen\VerlichtingView.hpp"/>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\verlichting_screen\VerlichtingViewBase.hpp"/>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="$(ApplicationRoot)\generated\simulator\touchgfx.rc"/>
